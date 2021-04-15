@@ -1,0 +1,9 @@
+version: '3'
+services:
+  #Nginx Service
+  webserver:
+    image: nbkhello:BUILD_NUMBER
+    container_name: webserver1
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
